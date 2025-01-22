@@ -7,6 +7,8 @@
 body{
     height: 3000px;
     background-color: rgba(11, 10, 10, 0.89);
+    
+    
 }
 header{
     background-image: url(/img/hdr.png);
@@ -213,4 +215,117 @@ li:hover{
     background-size: cover;
     background-position: center;
     grid-area: pic7 ;
+}
+
+/*============================================================
+----------------------- Specs start --------------------------
+============================================================*/
+.specs{
+    display: flex;
+    justify-content: center;
+}
+.spacsdiv{
+    margin: 10% 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.spacstitle{
+    font-size: 60px;
+    padding: 20px;
+    color: rgb(138, 9, 9);
+}
+.spacspar{
+    font-size: 20px;
+    padding: 35px;
+    color: rgb(138, 9, 9);
+    font-weight: 500;
+}
+table{
+    margin: 45px 0px;
+}
+td{
+    border-radius: 10px;
+    padding: 20px;
+}
+.spctblodd{
+    background-color: rgb(138, 9, 9);
+    color: black;
+    font-size: 20px;
+}
+.spctbleven{
+    color: rgb(138, 9, 9);
+    background-color: black;
+    font-size: 20px;
+}
+
+/*============================================================
+----------------------- Enquiry start ------------------------
+============================================================*/
+
+.eq{
+    display: flex;
+    justify-content: center;
+    margin: 35px 0px;
+    background-color: rgb(138, 9, 9);
+
+}
+.eqdiv{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0px;
+}
+.eqtitle{
+    font-size: 60px;
+    padding: 20px;
+    color: black;
+}
+.eqpar{
+    font-size: 20px;
+    padding: 35px;
+    color: black;
+}
+.eqtext{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    /* grid-template-rows: 1fr 2fr; */
+    grid-template-areas: 
+    "eqtext1 eqtext2 eqtext3 eqtext4"
+    "eqtext5 eqtext5 eqtext5 eqtext5"
+    "eqtext5 eqtext5 eqtext5 eqtext5"
+    ;
+    gap: 10px;
+}
+.eqtext1{
+    grid-area: eqtext1;
+}
+.eqtext2{grid-area: eqtext2;}
+.eqtext3{grid-area: eqtext3;}
+.eqtext4{grid-area: eqtext4;}
+
+
+.sbeq{
+    
+    width: 250px;
+    
+    
+}
+.eqtext5{grid-area: eqtext5; width: 100%;}
+.sbeq > input{
+    width: 100%;
+    height: 70px;
+    border-radius: 15px;
+    border: 3px solid black;
+    font-size: 25px;
+    padding: 10px;
+    color: rgb(138, 9, 9);
+    
+}
+.des{
+    width: 100%;
+    height: 250px;
 }
